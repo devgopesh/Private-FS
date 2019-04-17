@@ -1,0 +1,787 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+        <title>KADAYO - One World... One Roof Publishing</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <style type="text/css">
+            /* Some resets and issue fixes */
+            body{ width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; }
+            .ReadMsgBody { width: 100%; }
+            .ExternalClass {width:100%;}
+            .backgroundTable {margin:0 auto; padding:0; width:100%!important;}
+            .ExternalClass * {line-height: 115%;}
+            /* End reset */
+            span.preheader{
+                display: none;
+                font-size: 1px;
+                visibility: hidden;
+                opacity: 0;
+                color: transparent;
+                height: 0;
+                width: 0;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+            a:hover {text-decoration:underline;}
+            table, td {
+                border-collapse: collapse;
+            }
+            /* These are our tablet/medium screen media queries */
+            @media screen and (max-width: 795px) {
+                /* Display block allows us to stack elements */
+                *[class="mobile-column"], .mobile-column {display: block;}
+                /* Some more stacking elements */
+                *[class="mob-column"], .mob-column {float: none !important;width: 100% !important;}
+                /* Hide stuff */
+                *[class="hide"], .hide {display:none !important;}
+                /* For the 2x2 stack */
+                *[class="condensed"], .condensed {padding-bottom:40px !important; display: block;}
+                /* Centers content on mobile */
+                *[class="center"], .center {text-align:center !important; width:100% !important; height:auto !important;}
+                /* 100percent width section with 20px padding */
+                *[class="100pad"] {width:100% !important; padding:20px;}
+                /* 100percent width section with 20px padding left & right */
+                *[class="100padleftright"] {width:100% !important; padding:0 20px 0 20px;}
+                /* 100percent width section with 20px padding top & bottom */
+                *[class="100padtopbottom"] {width:100% !important; padding:20px 0 20px 0;}
+                /* 100percent width section with 20px padding top & bottom */
+                *[class="hr"], .hr {width:100% !important;}
+                /* This sets elements to 100% width and fixes the height issues too, a god send */
+                *[class="p10"], .p10   {width:10% !important; height:auto !important;}
+                *[class="p20"], .p20   {width:20% !important; height:auto !important;}
+                *[class="p30"], .p30   {width:30% !important; height:auto !important;}
+                *[class="p40"], .p40   {width:40% !important; height:auto !important;}
+                *[class="p50"], .p50   {width:50% !important; height:auto !important;}
+                *[class="p60"], .p60   {width:60% !important; height:auto !important;}
+                *[class="p70"], .p70   {width:70% !important; height:auto !important;}
+                *[class="p80"], .p80   {width:80% !important; height:auto !important;}
+                *[class="p90"], .p90   {width:90% !important; height:auto !important;}
+                *[class="p100"], .p100 {width:100% !important;}
+                *[class="p15"], .p15   {width:15% !important; height:auto !important;}
+                *[class="p25"], .p25   {width:25% !important; height:auto !important;}
+                *[class="p33"], .p33   {width:33% !important; height:auto !important;}
+                *[class="p35"], .p35   {width:35% !important; height:auto !important;}
+                *[class="p45"], .p45   {width:45% !important; height:auto !important;}
+                *[class="p55"], .p55   {width:55% !important; height:auto !important;}
+                *[class="p65"], .p65   {width:65% !important; height:auto !important;}
+                *[class="p75"], .p75   {width:75% !important; height:auto !important;}
+                *[class="p85"], .p85   {width:85% !important; height:auto !important;}
+                *[class="p95"], .p95   {width:95% !important; height:auto !important;}
+                *[class="alignleft"] {text-align: left !important;}
+                *[class="100button"] {width:100% !important;}
+            }
+            /* These are our smartphone/small screen media queries */
+            @media screen and (max-width: 450px) {
+                *[class="xs-no-pad"], .xs-no-pad {padding: 0 !important;}
+                /* Width on small screen devices */
+                *[class="xs-p25"], .xs-p25 {width:25% !important; height:auto !important;}
+                *[class="xs-p50"], .xs-p50 {width:50% !important; height:auto !important;}
+                *[class="xs-p75"], .xs-p75 {width:75% !important; height:auto !important;}
+                *[class="xs-p100"], .xs-p100 {width:100% !important; height:auto !important;}
+                /* Hide stuff */
+                *[class="xs-hide"], .xs-hide {display:none !important;}
+            }
+           
+            #add:hover{
+                text-decoration:underline;
+            }
+			@keyframes play {
+				0% {
+					/* transform: scale(1) */
+				}
+				15% {
+					box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2)
+				}
+				25% {
+					box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2), 0 0 0 10px rgba(255, 255, 255, 0.2)
+				}
+				30% {
+					/* transform: scale(1.2) */
+				}
+				50% {
+					box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2), 0 0 0 10px rgba(255, 255, 255, 0.2), 0 0 0 15px rgba(255, 255, 255, 0.2)
+				}
+				80% {
+					/* transform: scale(1) */
+				}
+			}
+			a:hover .hover_effect {
+				border-radius: 50%;
+				animation: play 1.5s ease infinite;
+			}
+        </style>
+    </head>
+
+    <body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #D8D8D8; margin: 0; padding: 0; width: 100%;">
+        <!--==========================================================-->
+        <!--|                        PREHEADER                       |-->
+        <!--==========================================================-->
+        <span class="preheader">Preheader shows up in Gmail and other email clients, 75 chars limit...</span>
+        <!--==========================================================-->
+        <table style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" width="100%">
+            <tr>
+                <td align="left" valign="top">
+                    <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width:100%; height: 312px" height="312" width="800" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tr>
+                            <td style="background-color: #3F3E46; background-position: center center; background-size: cover;" align="center" valign="top" bgcolor="#3F3E46" background="images/top-banner-bg.jpg">
+                                <!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:800px;">
+<v:fill type="frame" src="images/s2-banner-image.png" color="#3F3E46" />
+<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+<![endif]-->
+                                <table class="p90" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 650px;" width="650" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 650px;" width="650" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                <tr>
+                                                    <td valign="top" align="left">
+                                                        <!--[if gte mso 9]>
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr>
+<td align="left" valign="top" width="130">
+<![endif]-->
+                                                        <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 77px;" width="77" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                            <tr>
+                                                                <td style="height: 25px; line-height: 25px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" valign="top">
+                                                                    <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0;" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                        <tr>
+                                                                            <td align="center" valign="top">
+                                                                                <a href="#" style="border: none; display: block; outline: none; text-decoration: none;">
+                                                                                    <img src="images/logo.png" alt="logo" style="-ms-interpolation-mode: bicubic; border: 0; display: block; outline: 0; text-decoration: none; width: 43px;" width="43" border="0">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <!--[if gte mso 9]>
+</td>
+<td align="left" valign="top" width="110">
+<![endif]-->
+                                                        <table class="p100 hide" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 110px;" width="110" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                            <tr>
+                                                                <td align="left" valign="top">&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                        <!--[if gte mso 9]>
+</td>
+<td align="left" valign="top" width="360">
+<![endif]-->
+                                                        <!--[if gte mso 9]>
+</tr>
+</table>
+<![endif]-->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 30px; line-height: 30px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="editable_text" align="left" valign="top"><font face="'Montserrat', sans-serif"><span><span class="header2" style="color: #000; display: inline-block; font-size: 16pt; font-weight: 800; text-align: left; text-transform: uppercase;">One World... One Roof Publishing</span><span class="hide">&#xA0;</span></span></font>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table class="p90" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 650px;" width="650" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                <tr>
+                                                    <td style="color: #000; font-size: 8pt; font-weight: 400; line-height: 23px; text-align: left; mso-line-height-rule: exactly;" valign="top" align="left"><font face="'Montserrat', sans-serif">Though we are at door of 4.0 industrial revolution</font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 40px; line-height: 40px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="hide" style="height: 30px; line-height: 30px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 45px; line-height: 45px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <!--[if gte mso 9]>
+</v:textbox>
+</v:fill>
+</v:rect>
+<![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--==========================================================-->
+        <!--|                      WHAT WE CREATE                    |-->
+        <!--==========================================================-->
+        <table style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" width="100%">
+            <tr>
+                <td align="left" valign="top">
+                    <table class="p100" style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" width="800" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff">
+                        <tr>
+                            <td style="width: 30px;" width="30" valign="top" align="left">&nbsp;</td>
+                            <td align="center" valign="top">
+                                <table class="p100" style="margin:-135px 0 30px 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 645px;" width="645" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 645px;" width="645" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                <tr>
+                                                    <td valign="top" align="left">
+                                                        <!--[if gte mso 9]>
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr>
+<td align="left" valign="top" width="280">
+<![endif]-->
+                                                        <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 180px; background:#fff; border-radius:10px; box-shadow: 0 0 10px rgba(0,0,0,0.6);
+                                                                                   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+                                                                                   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+                                                                                   -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);" width="180" cellspacing="0" cellpadding="15" border="0" align="left">
+                                                            <tr>
+                                                                <td align="center" valign="top">
+                                                                    <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0;" cellspacing="0" cellpadding="0" border="0">
+                                                                        <tr>
+                                                                            <td style="height: 10px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="top" align="left">
+                                                                                <!--[if gte mso 9]>
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="280">
+<tr>
+<td align="left" valign="top" width="65">
+<![endif]-->
+                                                                                <table class="p20" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 180px;" width="180" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                    <tr>
+                                                                                        <td valign="top" align="left">
+                                                                                            <img src="images/writers-logo.png" alt="Icon" style="-ms-interpolation-mode: bicubic; border: 0; display: block; height: 37px; outline: 0; text-decoration: none; width: 54px;" width="65" border="0">
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <!--[if gte mso 9]>
+</td>
+<td align="left" valign="top" width="15">
+<![endif]-->
+                                                                                <table class="p10" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 15px;" width="15" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                    <tr>
+                                                                                        <td valign="top" align="left">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <!--[if gte mso 9]>
+</td>
+<td align="left" valign="top" width="200">
+<![endif]-->
+                                                                                <table class="p70" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 180px;" width="180" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                    <tr>
+                                                                                        <td valign="middle" style="color: #212121; font-size: 10pt; font-weight: 800; height: 50px; text-transform: uppercase; mso-line-height-rule: exactly;" align="left"><font face="'Montserrat', sans-serif">writers</font>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <!--[if gte mso 9]>
+</td>
+</tr>
+</table>
+<![endif]-->
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table style="width: 30px;" width="30" cellspacing="0" cellpadding="0" border="0">
+                                                                                    <tr>
+                                                                                        <td style="border-bottom:3px solid #13dba3; mso-line-height-rule: exactly;" align="left">
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="height: 10px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="color: #212121; font-size: 8pt; font-weight: 400; line-height: 18px; text-align: left; mso-line-height-rule: exactly;" align="center" valign="top"><font face="'Montserrat', sans-serif">
+                                                                                <ul style="padding:0 0 0 10px; margin:0;">
+
+                                                                                    <li style="margin-bottom:10px;">Streamlined self publishing process allows for books to be released under 48 Hours</li>
+                                                                                    <li style="margin-bottom:10px;">Royalty benefit automated system on real time</li>
+                                                                                    <li style="margin-bottom:10px;">Writing and publishing assistance free of charges</li>
+                                                                                    <li style="margin-bottom:10px;">Top emerging technology for Writer benefit</li>
+                                                                                    <li>Crypto Card for writer to transact across wallet</li>
+                                                                                </ul>
+                                                                                </font>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="height:0px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="middle" style="color: #212121; font-size: 8pt; font-weight: 800; height: 50px; text-transform: none; mso-line-height-rule: exactly;" align="left"><font face="'Montserrat', sans-serif">Sign up for launch updates !</font>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left" valign="top">
+                                                                                <table style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top">
+                                                                                            <table align="left" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent">
+
+                                                                                                <tr>
+                                                                                                    <td align="left" valign="top"><form method="post" action="contact.html">
+                                                                                                        <div style="position:relative; display:block;">
+                                                                                                            <ut style="position:relative; display:block; width:180px; line-height:30px; padding:10px 50px 10px 15px; height:20px; color:#212121; border:none; border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; font-size:9px; background:#f9f9f9; -webkit-transition:all 300ms ease; -ms-transition:all 300ms ease; -o-transition:all 300ms ease; -moz-transition:all 300ms ease; transition:all 300ms ease;" type="email" name="email" value="" placeholder="Enter Your Email ID" required="">
+                                                                                                            <button type="submit" style="position:absolute; right:0px; top:7px; background:none; border:none; cursor:pointer;"><img src="images/arrow-icon.png" alt="" /></button>
+                                                                                                        </div>
+                                                                                                        </form>
+                                                                                                    </td>
+                                                                                                    <td style="width: 25px;" width="25" valign="top" align="left">&nbsp;</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td colspan="3" style="height: 8px; line-height: 8px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table style="mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 60px; height: 60px; " width="60" height="60" cellspacing="0" cellpadding="15" border="0" align="left">
+                                                            <tr>
+                                                                            <td style="height: 60px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                        </tr>
+                                                            <tr>
+                                                                <td align="center" valign="top">
+                                                                    <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0;" cellspacing="0" cellpadding="0" border="0">
+                                                                        <tr>
+                                                                            <td style="mso-line-height-rule: exactly;" valign="top" align="left"><img style="width:50px; height:50px;" src="images/lo-icon.png" /></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <!--[if gte mso 9]>
+</td>
+<td align="left" valign="top" width="40">
+<![endif]-->
+
+                                                        <!--[if gte mso 9]>
+</td>
+<td align="left" valign="top" width="280">
+<![endif]-->
+                                                        <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 180px; background:#fff; border-radius:10px; box-shadow: 0 0 10px rgba(0,0,0,0.6);
+                                                                                   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+                                                                                   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+                                                                                   -o-box-shadow: 0 0 10px rgba(0,0,0,0.6); float: right;" width="180" cellspacing="0" cellpadding="15" border="0" align="left">
+                                                            <tr>
+                                                                <td align="center" valign="top">
+                                                                    <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0;" cellspacing="0" cellpadding="0" border="0">
+                                                                        <tr>
+                                                                            <td style="height: 10px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="top" align="left">
+                                                                                <!--[if gte mso 9]>
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="280">
+<tr>
+<td align="left" valign="top" width="65">
+<![endif]-->
+                                                                                <table class="p20" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 180px;" width="180" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                    <tr>
+                                                                                        <td valign="top" align="left">
+                                                                                            <img src="images/investor-icon.png" alt="Icon" style="-ms-interpolation-mode: bicubic; border: 0; display: block; height: 45px; outline: 0; text-decoration: none; width: 34px;" width="34" border="0">
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <!--[if gte mso 9]>
+</td>
+<td align="left" valign="top" width="15">
+<![endif]-->
+                                                                                <table class="p10" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 15px;" width="15" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                    <tr>
+                                                                                        <td valign="top" align="left">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <!--[if gte mso 9]>
+</td>
+<td align="left" valign="top" width="200">
+<![endif]-->
+                                                                                <table class="p70" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 180px;" width="180" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                    <tr>
+                                                                                        <td valign="middle" style="color: #212121; font-size: 10pt; font-weight: 800; height: 50px; text-transform: uppercase; mso-line-height-rule: exactly;" align="left"><font face="'Montserrat', sans-serif">investors</font>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <!--[if gte mso 9]>
+</td>
+</tr>
+</table>
+<![endif]-->
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table style="width: 30px;" width="30" cellspacing="0" cellpadding="0" border="0">
+                                                                                    <tr>
+                                                                                        <td style="border-bottom:3px solid #abdcff; mso-line-height-rule: exactly;" align="left">
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="height: 10px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="color: #212121; font-size: 8pt; font-weight: 400; line-height: 18px; text-align: left; mso-line-height-rule: exactly;" align="center" valign="top"><font face="'Montserrat', sans-serif">
+                                                                                <ul style="padding:0 0 0 10px; margin:0;">
+
+                                                                                    <li style="margin-bottom:10px;">2000+ Premium writers already signed up</li>
+                                                                                    <li style="margin-bottom:10px;">Many publishing success case (wattpad, medium, po.et)</li>
+                                                                                    <li style="margin-bottom:10px;">Kadayo business plan cover much more (over 90% more) than these success cases</li>
+                                                                                    <li>Top emerging technology like block chain, IoT, VR/AR with potential industry disruption</li>
+                                                                                </ul>
+                                                                                </font>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="height:52px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="middle" style="color: #212121; font-size: 8pt; font-weight: 800; height: 50px; text-transform: none; mso-line-height-rule: exactly;" align="left"><font face="'Montserrat', sans-serif">Let us get back to you !</font>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left" valign="top">
+                                                                                <table style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td align="left" valign="top">
+                                                                                            <table align="left" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent">
+
+                                                                                                <tr>
+                                                                                                    <td align="left" valign="top"><form method="post" action="contact.html">
+                                                                                                        <div style="position:relative; display:block;">
+                                                                                                            <input style="position:relative; display:block; width:180px; line-height:30px; padding:10px 50px 10px 15px; height:20px; color:#212121; border:none; border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; font-size:9px; background:#f9f9f9; -webkit-transition:all 300ms ease; -ms-transition:all 300ms ease; -o-transition:all 300ms ease; -moz-transition:all 300ms ease; transition:all 300ms ease;" type="email" name="email" value="" placeholder="Enter Your Email ID" required="">
+                                                                                                            <button type="submit" style="position:absolute; right:0px; top:7px; background:none; border:none; cursor:pointer;"><img src="images/arrow-icon.png" alt="" /></button>
+                                                                                                        </div>
+                                                                                                        </form>
+                                                                                                    </td>
+                                                                                                    <td style="width: 25px;" width="25" valign="top" align="left">&nbsp;</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td colspan="3" style="height: 8px; line-height: 8px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <!--[if gte mso 9]>
+</td>
+</tr>
+</table>
+<![endif]-->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="width: 30px;" width="30" valign="top" align="left">&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" width="100%" data-module-id="7" class="in-container ui-sortable-handle">
+            <tbody><tr>
+                <td align="left" valign="top">
+                    <table class="p100" style="margin: 0; background-color:#fafafa; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width:100%; height: 257px; background-image:url(images/bottom-bg.jpg); background-repeat:no-repeat;" width="800" height="257" cellspacing="0" cellpadding="0" border="0">
+                        <tbody><tr>
+                            <td style="width: 30px;" width="30" valign="top" align="left">&nbsp;</td>
+                            <td align="center" valign="top">
+                                <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 645px;" width="645" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <tbody><tr>
+                                        <td align="left" valign="top">
+                                            <!--[if gte mso 9]>
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr>
+<td align="left" valign="top" width="315">
+<![endif]-->
+                                            <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 365px;" width="365" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody><tr>
+                                                    <td class="p100" style="width: 300px;" width="300" align="center" valign="top">
+                                                        <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 300px;" width="300" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                            <tbody><tr>
+                                                                <td align="center" valign="top">
+                                                                    <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0;" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                        <tbody><tr>
+                                                                            <td style="height: 67px; line-height: 67px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="left" valign="top">
+                                                                                    <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0;" cellspacing="0" cellpadding="0" border="0">
+                                                                                        <tbody><tr>
+                                                                                            <td class="center editable_text header" style="color:#212121; font-size: 14pt; font-weight: 800; line-height: 25px; text-transform: uppercase; cursor: pointer; box-sizing: content-box; outline: none 0px;" align="left" valign="top"><font face="'Open Sans', sans-serif">who  are  we</font>
+                                                                                            </td>
+                                                                                            </tr>
+                                                                                        </tbody></table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="height: 0px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                            </tr>
+<!--
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <table style="width: 30px;" width="30" cellspacing="0" cellpadding="0" border="0">
+                                                                                        <tr>
+                                                                                            <td style="border-bottom:3px solid #fef372; mso-line-height-rule: exactly;" align="left">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+-->
+                                                                        </tbody></table>
+                                                                </td>
+                                                                </tr>
+                                                            </tbody></table>
+                                                    </td>
+                                                    <td class="hide" style="width: 15px;" width="15" valign="top" align="left">&nbsp;</td>
+                                                    </tr>
+                                                </tbody></table>
+                                            <!--[if gte mso 9]>
+</td>
+<td align="left" valign="top" width="285">
+<![endif]-->
+                                            <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 250px;" width="250" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="3" style="height: 50px; line-height: 8px; mso-line-height-rule: exactly;" valign="top" align="left" class="button">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" valign="top">
+                                                            <table class="p75 xs-p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 280px;" width="280" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center" valign="top" style="font-size: 7pt; font-weight: 400; line-height: 18px; text-align: justify;">
+                                                                            <font face="'Montserrat', sans-serif">
+                                                                                Kadayo born to simplify and improve process in publishing to take on saving time, removing cost, reducing risk and building trust in publishing ecosystem among all stakeholders. Kadayo intend to integrate publishing across vertically and horizontally. Core technology applied to build Kadayo will be block-chain based proof of ownership decentralized distributed platform for content publishing for any genre, any sector, any demographic, any geographic, behavioral pattern, lifestyle or any profession.
+                                                                            </font>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="3" style="height: 8px; line-height: 8px; mso-line-height-rule: exactly;" valign="top" align="left" class="button">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" valign="top" style="font-size: 7pt; font-weight: 400; line-height: 18px; text-align: justify;">
+                                                                            <font face="'Montserrat', sans-serif">
+                                                                                Kadayo a unique, ubiquitous a digital assets ownership company developing to provide all stakeholders value through validated consensus on transaction, provenance of ownership, immutability of digital record and to have universal finality in regard to any particular contents assets across the platform.
+                                                                            </font>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="3" style="height: 30px; line-height: 8px; mso-line-height-rule: exactly;" valign="top" align="left" class="button">&nbsp;</td>
+                                                                    </tr>
+                                                                </tbody></table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody></table>
+                                            <!--[if gte mso 9]>
+</td>
+</tr>
+</table>
+<![endif]-->
+                                        </td>
+                                        </tr>
+                                    </tbody></table>
+                            </td>
+                            <td style="width: 30px;" width="30" valign="top" align="left">&nbsp;</td>
+                            </tr>
+                        </tbody></table>
+                </td>
+                </tr>
+            </tbody></table>
+        <!-- footer -->
+        <table style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" width="100%" data-module-id="7" class="in-container ui-sortable-handle">
+            <tbody><tr>
+                <td align="left" valign="top">
+                    <table class="p100" style="background-color: #212121; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width:100%;" width="800" cellspacing="0" cellpadding="0" border="0" bgcolor="#212121">
+                        <tbody><tr>
+                            <td style="width: 30px;" width="30" valign="top" align="left">&nbsp;</td>
+                            <td align="center" valign="top">
+                                <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 645px;" width="645" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <tbody><tr>
+                                        <td align="left" valign="top">
+                                            <!--[if gte mso 9]>
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+<tr>
+<td align="left" valign="top" width="315">
+<![endif]-->
+                                            <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 362px;" width="362" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody><tr>
+                                                    <td class="p100" style="width: 300px;" width="300" align="center" valign="top">
+                                                        <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 362px;" width="300" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                            <tbody><tr>
+                                                                <td align="center" valign="top">
+                                                                    <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0;" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                        <tbody><tr>
+                                                                            <td style="height: 30px;mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="left" valign="top">
+                                                                                    <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0;" cellspacing="0" cellpadding="0" border="0">
+                                                                                        <tbody><tr>
+                                                                                            <td class="center editable_text header" style="color:#fff; font-size: 10pt; font-weight: 700; line-height: 39px; text-transform: uppercase;cursor: pointer; box-sizing: content-box; outline: none 0px;" align="left" valign="top"><font face="'Open Sans', sans-serif">follow us</font>
+                                                                                            </td>
+                                                                                            </tr>
+                                                                                        </tbody></table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="height: 35px; line-height: 35px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="left" valign="top">
+                                                                                    <table style="margin:0 5px 0 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; border-radius:5px; background:#59cbb9; width: 101px; height:51px;" width="101" cellspacing="0" cellpadding="10" border="0">
+                                                                                        <tbody><tr>
+                                                                                            <td class="center editable_text text" style="color:#fff; font-size: 5pt; line-height: 21px; text-align: center; word-break: break-all; overflow-wrap: break-word; box-sizing: content-box; outline: none 0px;" align="left" valign="top"><a href="https://www.facebook.com/Kadayoio-478051246031804/" target="_blank"><i class="fab fa-facebook-f" style="margin: 0 auto; display: block; font-size: 19px;"></i><font face="'Open Sans', sans-serif">Follow Us on Facebook</font></a>
+                                                                                            </td>
+                                                                                            </tr>
+                                                                                        </tbody></table>
+                                                                                </td>
+                                                                                <td align="left" valign="top">
+                                                                                    <table style="margin:0 5px 0 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; border-radius:5px; background:#59cbb9; width: 101px; height:51px;" width="101" cellspacing="0" cellpadding="10" border="0">
+                                                                                        <tbody><tr>
+                                                                                            <td class="center editable_text text" style="color:#fff; font-size: 5pt; line-height: 21px; text-align: center; word-break: break-all; overflow-wrap: break-word; box-sizing: content-box; outline: none 0px;" align="left" valign="top"><a href="https://twitter.com/Kadayo_io" target="_blank"><i class="fab fa-twitter" style="margin: 0 auto; display: block; font-size: 19px;"></i><font face="'Open Sans', sans-serif">Follow Us on Twitter</font></a>
+                                                                                            </td>
+                                                                                            </tr>
+                                                                                        </tbody></table>
+                                                                                </td>
+
+                                                                                
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="height: 30px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                </td>
+                                                                </tr>
+                                                            </tbody></table>
+                                                    </td>
+
+                                                    </tr>
+                                                </tbody></table>
+                                            <!--[if gte mso 9]>
+</td>
+<td align="left" valign="top" width="285">
+<![endif]-->
+                                            <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 220px;" width="220" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody><tr>
+                                                    <td align="center" valign="top">
+                                                        <table class="p75 xs-p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 220px;" width="200" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                            <tbody><tr>
+                                                                <td style="height: 30px;mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="left" valign="top">
+                                                                        <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0;" cellspacing="0" cellpadding="0" border="0">
+                                                                            <tbody><tr>
+                                                                                <td class="center editable_text header" style="color:#fff; font-size: 10pt; font-weight: 700; line-height: 39px; text-transform: uppercase;cursor: pointer; box-sizing: content-box; outline: none 0px;" align="left" valign="top"><font face="'Open Sans', sans-serif">contact us</font>
+                                                                                </td>
+                                                                                </tr>
+                                                                            </tbody></table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="height: 35px; line-height: 35px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="left" valign="top">
+                                                                        <table class="p100" style="margin:0 5px 0 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0;" cellspacing="0" cellpadding="10" border="0">
+                                                                            <tbody><tr>
+                                                                                <td id="add" class="center editable_text text" style="color:#fff; font-size: 7pt;text-align: left; word-break: break-all; padding-bottom:10px; overflow-wrap: break-word; box-sizing: content-box; outline: none 0px;" align="left" valign="top">
+																				<a href="#">
+																				<i class="fas fa-map-marker-alt hover_effect" 
+																				style="vertical-align:middle; margin-right:10px; margin-bottom: 2.1px;"></i>
+																				<font face="'Open Sans', sans-serif">S48 Dover Street, London, W1S 4FF</font>
+																				</a>
+                                                                                </td>
+                                                                                </tr>
+                                                                            </tbody></table>
+                                                                    </td>
+                                                                </tr>
+<!--
+                                                                <tr>
+                                                                    <td align="left" valign="top">
+                                                                        <table class="p100" style="margin:0 5px 0 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0;" cellspacing="0" cellpadding="10" border="0">
+                                                                            <tbody><tr>
+                                                                                <td class="center editable_text text" style="color:#fff; font-size: 7pt;text-align: left; word-break: break-all; padding-bottom:0px; padding-top:5px; overflow-wrap: break-word; box-sizing: content-box; outline: none 0px;" align="left" valign="top"><img style="vertical-align: middle; margin-right:10px;" src="images/phone-icon.png" /><font face="'Open Sans', sans-serif">+91 9898989898</font>
+                                                                                </td>
+                                                                                </tr>
+                                                                            </tbody></table>
+                                                                    </td>
+                                                                </tr>
+-->
+                                                                <tr>
+                                                                    <td align="left" valign="top">
+                                                                        <table class="p100" style="margin:0 5px 0 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0;" cellspacing="0" cellpadding="10" border="0">
+                                                                            <tbody><tr>
+                                                                                <td class="center editable_text text" style="color:#fff; font-size: 7pt;text-align: left; word-break: break-all; padding-bottom:0px; padding-top:5px; overflow-wrap: break-word; box-sizing: content-box; outline: none 0px;" align="left" valign="top">
+																				<a href="mailto:hello@Kadayo.io">
+																				<i class="far fa-envelope hover_effect" style="vertical-align: middle; margin-right: 10px; margin-bottom: 2.1px;"></i>
+																				<font face="'Open Sans', sans-serif">Hello@Kadayo.io</font></a>
+                                                                                </td>
+                                                                                </tr>
+                                                                            </tbody></table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="height: 35px; line-height: 35px; mso-line-height-rule: exactly;" valign="top" align="left">&nbsp;</td>
+                                                                </tr>
+                                                            </tbody></table>
+                                                    </td>
+                                                    </tr>
+                                                </tbody></table>
+                                            <!--[if gte mso 9]>
+</td>
+</tr>
+</table>
+<![endif]-->
+                                        </td>
+                                        </tr>
+                                    </tbody></table>
+                            </td>
+                            <td style="width: 30px;" width="30" valign="top" align="left">&nbsp;</td>
+                            </tr>
+                        </tbody></table>
+                </td>
+                </tr>
+            </tbody></table>
+        <!-- footer -->
+
+    </body>
+
+</html>
