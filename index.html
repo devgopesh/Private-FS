@@ -517,11 +517,11 @@
         <table style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" width="100%" data-module-id="7" class="in-container ui-sortable-handle">
             <tbody><tr>
                 <td align="left" valign="top">
-                    <table class="p100" style="margin: 0; background-color:#fafafa; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width:100%; height: 257px; background-image:url(images/bottom-bg.jpg); background-repeat:no-repeat;" width="800" height="257" cellspacing="0" cellpadding="0" border="0">
+                    <table class="p100" id="who" style="margin: 0; background-color:#fafafa; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width:100%; height: 257px; background-image:url(images/bottom-bg.jpg); background-repeat:no-repeat;" width="800" height="257" cellspacing="0" cellpadding="0" border="0">
                         <tbody><tr>
                             <td style="width: 30px;" width="30" valign="top" align="left">&nbsp;</td>
                             <td align="center" valign="top">
-                                <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 645px;" width="645" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 645px; z-index: 1; position: relative;" width="645" cellspacing="0" cellpadding="0" border="0" align="center">
                                     <tbody><tr>
                                         <td align="left" valign="top">
                                             <!--[if gte mso 9]>
@@ -782,6 +782,19 @@
                 </tr>
             </tbody></table>
         <!-- footer -->
+
+        <script src="three.r92.min.js"></script>
+        <script src="vanta.waves.min.js"></script>
+        <script>
+        VANTA.WAVES({
+          el: "#who",
+          color: 0x648c89,
+          shininess: 150.00,
+          waveHeight: 40.00,
+          waveSpeed: 0.45,
+          zoom: 0.65
+        })
+        </script>
 
     </body>
 
