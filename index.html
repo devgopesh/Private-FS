@@ -7,9 +7,10 @@
         <meta name="format-detection" content="telephone=no">
         <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
         <title>Kadayo- The New Era of Blockchain Publishing</title>
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <style type="text/css">
             /* Some resets and issue fixes */
             body{ width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; }
@@ -29,9 +30,8 @@
             }
             a {
                 text-decoration: none;
-                color: inherit;
-            }
-            a:hover {text-decoration:underline;}
+                color: inherit;                
+            }            
             table, td {
                 border-collapse: collapse;
             }
@@ -94,30 +94,38 @@
             #add:hover{
                 text-decoration:underline;
             }
-			@keyframes play {
-				0% {
-					/* transform: scale(1) */
-				}
-				15% {
-					box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2)
-				}
-				25% {
-					box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2), 0 0 0 10px rgba(255, 255, 255, 0.2)
-				}
-				30% {
-					/* transform: scale(1.2) */
-				}
-				50% {
-					box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2), 0 0 0 10px rgba(255, 255, 255, 0.2), 0 0 0 15px rgba(255, 255, 255, 0.2)
-				}
-				80% {
-					/* transform: scale(1) */
-				}
-			}
-			a:hover .hover_effect {
-				border-radius: 50%;
-				animation: play 1.5s ease infinite;
-			}
+            @keyframes play {
+                0% {
+                    /* transform: scale(1) */
+                }
+                15% {
+                    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2)
+                }
+                25% {
+                    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2), 0 0 0 10px rgba(255, 255, 255, 0.2)
+                }
+                30% {
+                    /* transform: scale(1.2) */
+                }
+                50% {
+                    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2), 0 0 0 10px rgba(255, 255, 255, 0.2), 0 0 0 15px rgba(255, 255, 255, 0.2)
+                }
+                80% {
+                    /* transform: scale(1) */
+                }
+            }
+            a:hover .hover_effect {
+                border-radius: 50%;
+                animation: play 1.5s ease infinite;
+            }
+            /* Gilroy light font */
+            @font-face {
+                font-family: gilroy;
+                src: url(gilroy-light.otf);
+            }
+            .gil {
+                font-family: gilroy;
+            }
         </style>
     </head>
 
@@ -127,10 +135,10 @@
         <!--==========================================================-->
         <span class="preheader">Preheader shows up in Gmail and other email clients, 75 chars limit...</span>
         <!--==========================================================-->
-        <table style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" width="100%">
+        <table id="first" style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" width="100%">
             <tr>
                 <td align="left" valign="top">
-                    <table id="kadayo" class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width:100%; height: 312px" height="312" width="800" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <table class="p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width:100%; height: 312px" height="312" width="800" cellspacing="0" cellpadding="0" border="0" align="center">
                         <tr>
                             <td style="background-color: #3F3E46; background-position: center center; background-size: cover;" align="center" valign="top" bgcolor="#3F3E46" background="images/top-banner-bg.jpg">
                                 <!--[if gte mso 9]>
@@ -159,7 +167,7 @@
                                                                         <tr>
                                                                             <td align="center" valign="top">
                                                                                 <a href="#" style="border: none; display: block; outline: none; text-decoration: none;">
-                                                                                    <img src="images/logo.png" alt="logo" style="-ms-interpolation-mode: bicubic; border: 0; display: block; outline: 0; text-decoration: none; width: 43px;" width="43" border="0">
+                                                                                    <img src="images/logo.png" alt="logo" style="-ms-interpolation-mode: bicubic; border: 0; display: block; outline: 0; text-decoration: none; width: 60px;" width="43" border="0">
                                                                                 </a>
                                                                             </td>
                                                                         </tr>
@@ -230,14 +238,14 @@
         <!--==========================================================-->
         <!--|                      WHAT WE CREATE                    |-->
         <!--==========================================================-->
-        <table style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%; z-index: 1; position: relative;" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" width="100%">
+        <table id="second" style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" width="100%">
             <tr>
                 <td align="left" valign="top">
                     <table class="p100" style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" width="800" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff">
                         <tr>
                             <td style="width: 30px;" width="30" valign="top" align="left">&nbsp;</td>
                             <td align="center" valign="top">
-                                <table class="p100" style="margin:-135px 0 30px 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 645px;" width="645" cellspacing="0" cellpadding="0" border="0">
+                                <table class="p100" style="margin:-135px 0 30px 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 645px; z-index: 1; position: relative;" width="645" cellspacing="0" cellpadding="0" border="0">
                                     <tr>
                                         <td align="center" valign="top">
                                             <table class="p100" style="margin: 20px 0 0 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 645px;" width="645" cellspacing="0" cellpadding="0" border="0" align="center">
@@ -514,10 +522,10 @@
                 </td>
             </tr>
         </table>
-        <table style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" width="100%" data-module-id="7" class="in-container ui-sortable-handle">
+        <table id="third" style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" width="100%" data-module-id="7" class="in-container ui-sortable-handle">
             <tbody><tr>
                 <td align="left" valign="top">
-                    <table class="p100" id="who" style="margin: 0; background-color:#fafafa; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width:100%; height: 257px; background-image:url(images/bottom-bg.jpg); background-repeat:no-repeat;" width="800" height="257" cellspacing="0" cellpadding="0" border="0">
+                    <table class="p100" style="margin: 0; background-color:#fafafa; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width:100%; height: 257px; background-image:url(images/bottom-bg.jpg); background-repeat:no-repeat;" width="800" height="257" cellspacing="0" cellpadding="0" border="0">
                         <tbody><tr>
                             <td style="width: 30px;" width="30" valign="top" align="left">&nbsp;</td>
                             <td align="center" valign="top">
@@ -625,14 +633,14 @@
                 </tr>
             </tbody></table>
         <!-- footer -->
-        <table style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" width="100%" data-module-id="7" class="in-container ui-sortable-handle">
+        <table id="fourth" style="background-color: #fff; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 100%;" cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" width="100%" data-module-id="7" class="in-container ui-sortable-handle">
             <tbody><tr>
                 <td align="left" valign="top">
                     <table class="p100" style="background-color: #212121; margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width:100%;" width="800" cellspacing="0" cellpadding="0" border="0" bgcolor="#212121">
                         <tbody><tr>
                             <td style="width: 30px;" width="30" valign="top" align="left">&nbsp;</td>
                             <td align="center" valign="top">
-                                <table class="p75 p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 645px;" width="645" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <table class="p75 p100" style="margin: 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; width: 645px; z-index: 1; position: relative;" width="645" cellspacing="0" cellpadding="0" border="0" align="center">
                                     <tbody><tr>
                                         <td align="left" valign="top">
                                             <!--[if gte mso 9]>
@@ -667,7 +675,7 @@
                                                                                 <td align="left" valign="top">
                                                                                     <table style="margin:0 5px 0 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; border-radius:5px; background:#59cbb9; width: 101px; height:51px;" width="101" cellspacing="0" cellpadding="10" border="0">
                                                                                         <tbody><tr>
-                                                                                            <td class="center editable_text text" style="color:#fff; font-size: 5pt; line-height: 21px; text-align: center; word-break: break-all; overflow-wrap: break-word; box-sizing: content-box; outline: none 0px;" align="left" valign="top"><a href="https://www.facebook.com/Kadayoio-478051246031804/" target="_blank"><i class="fab fa-facebook-f hover_effect" style="margin: 0 auto; display: block; font-size: 19px; width: 9px;"></i><font face="'Open Sans', sans-serif">Follow Us on Facebook</font></a>
+                                                                                            <td class="center editable_text text" style="color:#fff; font-size: 5pt; line-height: 21px; text-align: center; word-break: break-all; overflow-wrap: break-word; box-sizing: content-box; outline: none 0px;" align="left" valign="top"><a href="https://www.facebook.com/Kadayoio-478051246031804/" target="_blank" style="font-size: 7px; font-weight: bold;"><i class="fab fa-facebook-f hover_effect" style="margin: 0 auto; display: block; font-size: 19px; width: 9px;"></i><font class="gil" face="'Open Sans', sans-serif">Follow Us on Facebook</font></a>
                                                                                             </td>
                                                                                             </tr>
                                                                                         </tbody></table>
@@ -675,7 +683,7 @@
                                                                                 <td align="left" valign="top">
                                                                                     <table style="margin:0 5px 0 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0; border-radius:5px; background:#59cbb9; width: 101px; height:51px;" width="101" cellspacing="0" cellpadding="10" border="0">
                                                                                         <tbody><tr>
-                                                                                            <td class="center editable_text text" style="color:#fff; font-size: 5pt; line-height: 21px; text-align: center; word-break: break-all; overflow-wrap: break-word; box-sizing: content-box; outline: none 0px;" align="left" valign="top"><a href="https://twitter.com/Kadayo_io" target="_blank"><i class="fab fa-twitter hover_effect" style="margin: 0 auto; display: block; font-size: 19px; width: 18px;"></i><font face="'Open Sans', sans-serif">Follow Us on Twitter</font></a>
+                                                                                            <td class="center editable_text text" style="color:#fff; font-size: 5pt; line-height: 21px; text-align: center; word-break: break-all; overflow-wrap: break-word; box-sizing: content-box; outline: none 0px;" align="left" valign="top"><a href="https://twitter.com/Kadayo_io" target="_blank" style="font-size: 7px; font-weight: bold;"><i class="fab fa-twitter hover_effect" style="margin: 0 auto; display: block; font-size: 19px; width: 18px;"></i><font class="gil" face="'Open Sans', sans-serif">Follow Us on Twitter</font></a>
                                                                                             </td>
                                                                                             </tr>
                                                                                         </tbody></table>
@@ -724,11 +732,11 @@
                                                                         <table class="p100" style="margin:0 5px 0 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0;" cellspacing="0" cellpadding="10" border="0">
                                                                             <tbody><tr>
                                                                                 <td id="add" class="left editable_text text" style="color:#fff; font-size: 7pt;text-align: left; word-break: break-all; padding-bottom:10px; overflow-wrap: break-word; box-sizing: content-box; outline: none 0px;" align="left" valign="top">
-																				<a href="#">
-																				<i class="fas fa-map-marker-alt hover_effect" 
-																				style="vertical-align:middle; margin-right:10px; margin-bottom: 2.1px;"></i>
-																				<font face="'Open Sans', sans-serif">48 Dover Street, London, W1S 4FF</font>
-																				</a>
+                                                                                <a href="#" style="font-size: 10px;">
+                                                                                <i class="fas fa-map-marker-alt hover_effect" 
+                                                                                style="vertical-align:middle; margin-right:10px; margin-bottom: 2.1px;"></i>
+                                                                                <font class="gil" face="'Open Sans', sans-serif">48 Dover Street, London, W1S 4FF</font>
+                                                                                </a>
                                                                                 </td>
                                                                                 </tr>
                                                                             </tbody></table>
@@ -751,9 +759,9 @@
                                                                         <table class="p100" style="margin:0 5px 0 0; mso-table-lspace: 0; mso-table-rspace: 0; padding: 0;" cellspacing="0" cellpadding="10" border="0">
                                                                             <tbody><tr>
                                                                                 <td class="left editable_text text" style="color:#fff; font-size: 7pt;text-align: left; word-break: break-all; padding-bottom:0px; padding-top:5px; overflow-wrap: break-word; box-sizing: content-box; outline: none 0px;" align="left" valign="top">
-																				<a href="mailto:hello@Kadayo.io">
-																				<i class="far fa-envelope hover_effect" style="vertical-align: middle; margin-right: 10px; margin-bottom: 2.1px;"></i>
-																				<font face="'Open Sans', sans-serif">Hello@Kadayo.io</font></a>
+                                                                                <a href="mailto:hello@Kadayo.io" style="font-size: 10px;">
+                                                                                <i class="far fa-envelope hover_effect" style="vertical-align: middle; margin-right: 10px; margin-bottom: 2.1px;"></i>
+                                                                                <font class="gil" face="'Open Sans', sans-serif">Hello@Kadayo.io</font></a>
                                                                                 </td>
                                                                                 </tr>
                                                                             </tbody></table>
@@ -787,22 +795,17 @@
         <script src="vanta.waves.min.js"></script>
         <script>
         VANTA.WAVES({
-          el: "#who",
+          el: "body",
           color: 0x648c89,
           shininess: 150.00,
           waveHeight: 40.00,
           waveSpeed: 0.45,
           zoom: 0.65
         })
-
-        VANTA.WAVES({
-          el: "#kadayo",
-          color: 0x648c89,
-          shininess: 150.00,
-          waveHeight: 40.00,
-          waveSpeed: 0.45,
-          zoom: 0.65
-        })
+        document.querySelector('#first').style.position = 'unset';
+        document.querySelector('#second').style.position = 'unset';
+        document.querySelector('#third').style.position = 'unset';
+        document.querySelector('#fourth').style.position = 'unset';
         </script>
 
     </body>
